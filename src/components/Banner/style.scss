@@ -1,0 +1,62 @@
+.banner {
+  display: flex;
+  align-items: center;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    color: var(--quaternary);
+    &--title {
+      width: 23%;
+      text-transform: uppercase;
+      font-size: 34px;
+      line-height: 46px;
+      font-weight: bold;
+    }
+    &--description {
+      width: 40%;
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &--button {
+      width: 160px;
+      margin-top: 40px;
+      border-radius: 6px;
+    }
+  }
+  height: 100vh;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #968c86;
+}
+
+.arrow-down {
+  margin-right: 5px;
+  animation-name: jumpdown;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.arrow-click {
+  &:hover {
+    color: var(--primary);
+  }
+  margin-left: 10px;
+  font-size: 18px;
+  flex: 1 1 0%;
+  cursor: pointer;
+}
+
+@keyframes jumpdown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

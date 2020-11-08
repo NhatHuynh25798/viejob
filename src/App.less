@@ -1,0 +1,78 @@
+@import '~antd/dist/antd.less';
+
+:root {
+  --primary: #f7b55f;
+  --secondary: #17a2b8;
+  --tertiary: #000000;
+  --quaternary: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Nunito Sans' !important;
+  scroll-behavior: smooth;
+  color: var(--tertiary);
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: var(--tertiary) !important;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--secondary) !important;
+}
+
+.layout-container {
+  width: 100%;
+}
+
+.header-container {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 76px;
+  width: 100%;
+  will-change: background;
+  transition: background 0.3s ease-in-out 0s;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--quaternary) !important;
+}
+
+.margin-content {
+  margin-top: 76px;
+}
+
+.footer-container {
+  padding-top: 60px;
+  background-color: #edeef0 !important;
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 5px;
+  }
+}

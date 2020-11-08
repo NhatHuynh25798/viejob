@@ -1,0 +1,61 @@
+.logo {
+  width: 90px;
+  height: 100%;
+  margin-right: 24px;
+  cursor: pointer;
+  .logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    .logo-title {
+      font-size: 28px;
+      font-weight: bolder;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    li {
+      span {
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 6px;
+      }
+    }
+  }
+  .buttonHeader.ant-btn.ant-btn-primary {
+    width: 165px;
+    border-radius: 6px;
+  }
+  .buttonHeader.customerButton.ant-btn.ant-btn-primary {
+    background-color: var(--tertiary);
+    border-color: var(--tertiary);
+    &:focus {
+      background-color: var(--tertiary);
+      border-color: var(--tertiary);
+    }
+    &:focus-within {
+      background-color: var(--tertiary);
+      border-color: var(--tertiary);
+    }
+    &:active {
+      background-color: var(--tertiary);
+      border-color: var(--tertiary);
+    }
+    &:visited {
+      background-color: var(--tertiary);
+      border-color: var(--tertiary);
+    }
+  }
+}

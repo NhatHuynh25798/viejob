@@ -1,25 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, useState, useEffect } from 'react'
+import { Layout, Spin } from 'antd'
 
-function App() {
+import HeaderClient from './components/HeaderClient'
+import FooterClient from './components/FooterClient'
+import Routes from './routes.js'
+import './App.less'
+
+const App = () => {
+  const { Header, Footer, Content } = Layout
+  const [background, setBackground] = useState('none')
+  const [color, setColor] = useState('var(--quaternary)')
+
+  useEffect(() => {
+    window.addEventListener('scroll', (e) => detectOnScroll(e))
+  }, [])
+
+  const detectOnScroll = (e) => {
+    const window = e.currentTarget
+    let prev = window.scrollY
+    if (prev > 0) {
+      setBackground('var(--quaternary)')
+      setColor('var(--tertiary)')
+    }
+    if (prev === 0) {
+      setBackground('none')
+      setColor('var(--quaternary)')
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Suspense
+      fallback={
+        <Spin
+          size='large'
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '100vh',
+            color: 'var(--primary)',
+          }}
+        />
+      }
+    >
+      <Layout className='layout-container'>
+        <Header className='header-container' style={{ background: background }}>
+          <HeaderClient color={color} />
+        </Header>
+        <Content className='content-container'>
+          <Routes />
+        </Content>
+        <Footer className='footer-container'>
+          <FooterClient />
+        </Footer>
+      </Layout>
+    </Suspense>
+  )
 }
 
-export default App;
+export default App
