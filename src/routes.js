@@ -1,5 +1,5 @@
 import React, { lazy } from 'react'
-import { Link, Router, Redirect } from '@reach/router'
+import { Link, Router } from '@reach/router'
 import { Result } from 'antd'
 
 const HomePage = lazy(() => import('./views/Homepage'))
