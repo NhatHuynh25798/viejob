@@ -44,7 +44,7 @@ const Banner = (props) => {
                     className='arrow-down'
                   />
                 </Col>
-                <Col className='arrow-click'>Kéo xuống để xem thêm</Col>
+                <Col className='arrow-click'>Kéo xuốnga để xem thêm</Col>
               </Row>
             </Col>
           </Row>

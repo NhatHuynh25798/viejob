@@ -22,7 +22,7 @@ const Advantages = (props) => {
   return (
     <Row justify='center' style={{ padding: '120px' }} id='advantage'>
       <Col xs={24}>
-        <Row justify='space-between'>
+        <Row justify='space-between' align='top'>
           {data?.map((it, idx) => (
             <Col
               sm={8}
@@ -96,7 +96,7 @@ const Advantages = (props) => {
                       fontSize: '20px',
                     }}
                   >
-                    Việc Có luôn nỗ lực kết nối cùng các đối tác uy tín để cung
+                    VieJob luôn nỗ lực kết nối cùng các đối tác uy tín để cung
                     cấp những công việc có mức thù lao cao cùng môi trường làm
                     việc chuyên nghiệp.
                   </span>
@@ -104,7 +104,7 @@ const Advantages = (props) => {
               </Col>
             </Row>
           </Col>
-          <Col xs={7}>
+          <Col xs={8}>
             {partners.map((it, idx) => (
               <img
                 key={idx}

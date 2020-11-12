@@ -3,6 +3,7 @@ import { Link, Router } from '@reach/router'
 import { Result } from 'antd'
 
 const HomePage = lazy(() => import('./views/Homepage'))
+const CustomerPage = lazy(() => import('./views/CustomerPage'))
 
 const PageNotFound = () => (
   <Result
@@ -23,6 +24,7 @@ const Routes = () => {
       }}
     >
       <HomePage path='/' />
+      <CustomerPage path='/cho-nguoi-tim-viec' />
       <PageNotFound path='*' />
     </Router>
   )

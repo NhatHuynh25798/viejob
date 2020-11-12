@@ -3,13 +3,12 @@ import { Row, Col } from 'antd'
 
 import Banner from 'components/Banner'
 import Advantages from 'components/Advantages'
-import './style.scss'
 
-const Homepage = (props) => {
+const CustomerPage = (props) => {
   const content = {
-    title: 'CẦN NGƯỜI LÀM SẼ CÓ NGAY',
+    title: 'Tìm việc làm thời vụ trong vài phút',
     description:
-      'Tiếp cận nhanh chóng với 40,000+ nhân sự sẵn sàng làm việc, mọi thủ tục được VieJob hỗ trợ',
+      'Chủ động chọn việc làm, ngày đi làm cho các công ty uy tín như Tiki, GHN, Shopee,...',
   }
 
   const advantages = [
@@ -46,7 +45,7 @@ const Homepage = (props) => {
     <Row>
       <Col xs={24} sm={24}>
         <Banner
-          backgroundImage='/assets/images/provider-banner.jpg'
+          backgroundImage='/assets/images/customer-banner.jpg'
           content={content}
         />
       </Col>
@@ -57,4 +56,4 @@ const Homepage = (props) => {
   )
 }
 
-export default Homepage
+export default CustomerPage
