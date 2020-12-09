@@ -12,7 +12,7 @@ const HeaderClient = (props) => {
 
   return (
     <Row justify='space-between' style={{ width: '100%' }}>
-      <Col xs={0} md={{ span: 18, offset: 3 }}>
+      <Col xs={0} md={{ span: 24 }}>
         <Row
           justify='space-between'
           align='middle'

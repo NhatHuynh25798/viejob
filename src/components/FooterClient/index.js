@@ -63,7 +63,7 @@ const FooterClient = (props) => {
 
   return (
     <Row justify='space-between'>
-      <Col xs={{ span: 18, offset: 3 }}>
+      <Col xs={{ span: 24 }}>
         <Row justify='center' align='top' style={{ marginBottom: '10px  ' }}>
           <Col xs={24} md={12} sm={12} style={{ paddingRight: '0 10px' }}>
             <Row className='logo-footer'>

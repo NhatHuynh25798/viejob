@@ -31,7 +31,9 @@ const Banner = (props) => {
             <Col style={{ marginTop: '15vh' }}>
               <Row
                 onClick={() => {
-                  let elmnt = document.getElementById('advantage')
+                  let elmnt =
+                    document.getElementById('find-filter') ??
+                    document.getElementById('advantage')
                   elmnt.scrollIntoView({
                     behavior: 'smooth',
                   })
@@ -44,7 +46,7 @@ const Banner = (props) => {
                     className='arrow-down'
                   />
                 </Col>
-                <Col className='arrow-click'>Kéo xuốnga để xem thêm</Col>
+                <Col className='arrow-click'>Kéo xuống để xem thêm</Col>
               </Row>
             </Col>
           </Row>

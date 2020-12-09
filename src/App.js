@@ -1,5 +1,5 @@
 import React, { Suspense, useState, useEffect } from 'react'
-import { Layout, Spin } from 'antd'
+import { Layout, Spin, Row, Col } from 'antd'
 
 import HeaderClient from './components/HeaderClient'
 import FooterClient from './components/FooterClient'
@@ -45,13 +45,21 @@ const App = () => {
     >
       <Layout className='layout-container'>
         <Header className='header-container' style={{ background: background }}>
-          <HeaderClient color={color} />
+          <Row className='container'>
+            <Col xs={24}>
+              <HeaderClient color={color} />
+            </Col>
+          </Row>
         </Header>
-        <Content className='content-container'>
+        <Content className='content-container margin-content'>
           <Routes />
         </Content>
         <Footer className='footer-container'>
-          <FooterClient />
+          <Row className='container'>
+            <Col xs={24}>
+              <FooterClient />
+            </Col>
+          </Row>
         </Footer>
       </Layout>
     </Suspense>

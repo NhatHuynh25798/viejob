@@ -20,8 +20,8 @@ const Advantages = (props) => {
   ]
 
   return (
-    <Row justify='center' style={{ padding: '120px' }} id='advantage'>
-      <Col xs={24}>
+    <Row justify='center' style={{ padding: '120px 0' }} id='advantage'>
+      <Col xs={24} style={{ minHeight: '220px' }}>
         <Row justify='space-between' align='top'>
           {data?.map((it, idx) => (
             <Col

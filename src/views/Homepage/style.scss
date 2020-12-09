@@ -1,0 +1,101 @@
+.find-filter {
+  &__form {
+    width: 80%;
+    .ant-select.ant-select-lg.ant-select-single.ant-select-show-arrow,
+    .ant-input.ant-input-lg {
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .ant-select.ant-select-lg.ant-select-single.ant-select-show-arrow {
+      .ant-select-selector {
+        border-radius: 10px;
+      }
+      padding: 0;
+    }
+  }
+  width: 100%;
+  padding: 120px;
+  background: #ededf0;
+}
+
+.contact-us {
+  width: 100%;
+  padding: 120px;
+  background: #323a4d;
+  &__info {
+    span {
+      display: block;
+      margin-bottom: 30px;
+    }
+    p {
+      width: 50%;
+      font-size: 16px;
+      color: #c0c5cd;
+      margin-bottom: 30px;
+    }
+    .info-data {
+      &__number {
+        font-size: 34px;
+        font-weight: bold;
+        color: #f5a337;
+      }
+      span {
+        margin: 0;
+        font-size: 18px;
+      }
+      width: 50%;
+    }
+    font-size: 24px;
+    color: white;
+  }
+  &__form {
+    .form-body {
+      width: 70%;
+      .ant-input-wrapper.ant-input-group {
+        &:hover {
+          .ant-input.ant-input-lg,
+          .ant-input-group-addon {
+            border-color: #ffd08a;
+          }
+        }
+        &:focus {
+          .ant-input.ant-input-lg,
+          .ant-input-group-addon {
+            border-color: #ffd08a;
+          }
+        }
+        .ant-input-group-addon,
+        .ant-input.ant-input-lg {
+          border-radius: 10px;
+          padding: 13px;
+          background-color: #545a65;
+        }
+        .ant-input-group-addon {
+          img {
+            width: 22px;
+            margin-bottom: 2px;
+          }
+          padding-right: 3px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        .ant-input.ant-input-lg {
+          border-left: none;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          &:hover {
+            border-left: 0;
+          }
+          &:focus {
+            box-shadow: none;
+            border-left: 0;
+          }
+          &:focus-visible {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
