@@ -1,0 +1,72 @@
+.job-card {
+  &__container {
+    position: relative;
+    &:hover {
+      border-color: var(--secondary);
+    }
+    width: 100%;
+    height: auto;
+    min-height: 307px;
+    margin-top: 1.2rem;
+    border: 0.2rem solid transparent;
+    border-radius: 0.4rem;
+    background-color: var(--quaternary);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    background-color: white;
+    background-size: cover;
+    background-position: center center;
+  }
+  &__description {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 12.5rem !important;
+    padding: 1.2rem 1.2rem 0.8rem;
+    border-radius: 0 0 0.4rem 0.4rem;
+    background-color: white;
+    .ant-btn.ant-btn-link {
+      &:hover {
+        color: #17a2b8;
+      }
+      color: black;
+    }
+    &--name {
+      margin: 10px 0;
+      overflow: hidden;
+      display: -webkit-box;
+      height: 4rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.128rem;
+      text-transform: uppercase;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      color: var(--tertiary);
+    }
+    &--price {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+  &__discount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 2.1rem;
+    background-size: contain;
+    background-image: url('/assets/images/price-tag.png');
+    text-align: center;
+    &--content {
+      font-size: 1.4rem;
+      color: var(--quaternary);
+      font-weight: 600;
+    }
+  }
+}

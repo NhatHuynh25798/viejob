@@ -25,7 +25,7 @@ const HeaderClient = (props) => {
               </span>
             </Link>
           </Col>
-          <Col style={{ flex: '1 1 0%', color: 'var(--tertiary)' }}>
+          <Col style={{ flex: '1 1 0%', color: 'var(--tertiary)!important' }}>
             <Row justify='end' align='middle'>
               <ul style={{ margin: 0 }} className='menu'>
                 <Link to='/' className='menu__item'>

@@ -1,6 +1,5 @@
 .find-filter {
   &__form {
-    width: 80%;
     .ant-select.ant-select-lg.ant-select-single.ant-select-show-arrow,
     .ant-input.ant-input-lg {
       width: 100%;
@@ -14,12 +13,16 @@
       padding: 0;
     }
   }
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding: 120px;
   background: #ededf0;
 }
 
 .contact-us {
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding: 120px;
   background: #323a4d;
@@ -36,20 +39,25 @@
     }
     .info-data {
       &__number {
+        padding: 0 15px;
+        text-align: center;
         font-size: 34px;
         font-weight: bold;
         color: #f5a337;
       }
       span {
+        text-align: center;
         margin: 0;
         font-size: 18px;
       }
-      width: 50%;
+      width: 100%;
     }
     font-size: 24px;
     color: white;
   }
   &__form {
+    display: flex;
+    justify-content: center;
     .form-body {
       width: 70%;
       .ant-input-wrapper.ant-input-group {
@@ -61,6 +69,12 @@
         }
         &:focus {
           .ant-input.ant-input-lg,
+          .ant-input-group-addon {
+            border-color: #ffd08a;
+          }
+        }
+        &:focus-within {
+          ant-input.ant-input-lg,
           .ant-input-group-addon {
             border-color: #ffd08a;
           }

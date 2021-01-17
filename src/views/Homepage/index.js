@@ -1,6 +1,8 @@
 import React from 'react'
 import { Row, Col, Form, Input, Button, Select } from 'antd'
 
+import jobsData from '../../jobs.js'
+import JobList from 'components/JobList'
 import Banner from 'components/Banner'
 import Advantages from 'components/Advantages'
 import './style.scss'
@@ -165,9 +167,40 @@ const Homepage = (props) => {
                 </Row>
               </Form>
             </Col>
+            <Col
+              xs={24}
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                marginTop: '50px',
+              }}
+            >
+              <Row justify='center' className='container'>
+                <Col xs={24} style={{ textAlign: 'center' }}>
+                  <h1
+                    style={{
+                      margin: 0,
+                      fontSize: '45px',
+                      fontWeight: 'bold',
+                      textTransform: 'uppercase',
+                    }}
+                  >
+                    Danh sách các việc làm hấp dẫn
+                  </h1>
+                </Col>
+                <Col xs={24}>
+                  <Row>
+                    <div style={{ width: '100%' }}>
+                      <JobList data={jobsData} />
+                    </div>
+                  </Row>
+                </Col>
+              </Row>
+            </Col>
           </Row>
         </Col>
       )}
+
       <Col xs={24} sm={24} className='container'>
         <Advantages
           data={path === '/' ? advantagesProvider : advantagesCustomer}
@@ -177,25 +210,34 @@ const Homepage = (props) => {
         <Col className='contact-us'>
           <Row className='container' justify='space-between'>
             <Col xs={12} className='contact-us__info'>
-              <Row>
-                <Col xs={24}>
-                  <span>Liên hệ ngay</span>
-                  <p>
-                    Bạn đang đau đầu với vấn đề tuyển dụng nhân sự? Điền thông
-                    tin ngay để đăng ký và chúng tôi sẽ giúp bạn điều đó.
-                  </p>
-                </Col>
-              </Row>
-              <Row justify='space-around' className='info-data'>
-                <Col xs={12}>
-                  <div className='info-data__number'>40.000+</div>
-                  <span>người lao động</span>
-                </Col>
-                <Col xs={12}>
-                  <div className='info-data__number'>360.000+</div>
-                  <span>giờ làm việc</span>
-                </Col>
-              </Row>
+              <Col xs={24}>
+                <Row justify='center'>
+                  <Col xs={24}>
+                    <Row justify='center'>
+                      <span>Liên hệ ngay</span>
+                    </Row>
+                  </Col>
+                  <Col xs={24}>
+                    <Row justify='center'>
+                      <p>
+                        Bạn đang đau đầu với vấn đề tuyển dụng nhân sự? Điền
+                        thông tin ngay để đăng ký và chúng tôi sẽ giúp bạn điều
+                        đó.
+                      </p>
+                    </Row>
+                    <Row justify='center' className='info-data'>
+                      <div>
+                        <div className='info-data__number'>40.000+</div>
+                        <span>người lao động</span>
+                      </div>
+                      <div>
+                        <div className='info-data__number'>360.000+</div>
+                        <span>giờ làm việc</span>
+                      </div>
+                    </Row>
+                  </Col>
+                </Row>
+              </Col>
             </Col>
             <Col xs={12} className='contact-us__form'>
               <Form form={form} scrollToFirstError className='form-body'>

@@ -8,7 +8,7 @@ import './App.less'
 
 const App = () => {
   const { Header, Footer, Content } = Layout
-  const [background, setBackground] = useState('none')
+  const [background, setBackground] = useState('transparent')
   const [color, setColor] = useState('var(--quaternary)')
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const App = () => {
       setColor('var(--tertiary)')
     }
     if (prev === 0) {
-      setBackground('none')
+      setBackground('transparent')
       setColor('var(--quaternary)')
     }
   }

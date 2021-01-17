@@ -1,0 +1,99 @@
+.list-item {
+  &__container {
+    display: flex;
+    margin-top: 4rem;
+    padding: 1rem 2rem 0 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.1);
+    background-color: var(--quaternary);
+  }
+  &__header {
+    &--title {
+      font-size: 2.8rem;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    &--button {
+      &:hover,
+      :active,
+      :focus,
+      :visited {
+        color: var(--primary);
+        background: rgb(229, 246, 240) none repeat scroll 0% 0%;
+      }
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 9.8rem;
+      min-width: max-content;
+      padding: 0.8rem;
+      border: 1px solid rgb(229, 246, 240);
+      border-radius: 0.4rem;
+      font-size: 1.5rem;
+      font-weight: 550;
+      color: var(--primary);
+      background: rgb(229, 246, 240) none repeat scroll 0% 0%;
+      cursor: pointer;
+    }
+  }
+}
+
+.list-item__container {
+  .ant-carousel {
+    .slick-center {
+      font-size: 3em;
+    }
+
+    .slick-arrow {
+      &:hover {
+        opacity: 1;
+        background: var(--quaternary);
+      }
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+      color: transparent;
+      font-size: 0;
+      line-height: 0;
+      background: var(--quaternary);
+      opacity: 0.65;
+      cursor: pointer;
+    }
+    @media only screen and (max-width: 768px) {
+      .slick-arrow {
+        width: 24px;
+        height: 24px;
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+
+  .ant-carousel .slick-arrow.slick-next {
+    padding: 10px 8px 10px 10px;
+    right: -4.2rem;
+    svg {
+      margin-left: 0.5rem;
+    }
+    @media only screen and (max-width: 768px) {
+      padding: 5px 5px 5px 3px;
+    }
+  }
+
+  .ant-carousel .slick-arrow.slick-prev {
+    padding: 10px 10px 10px 8px;
+    left: -4.2rem;
+    @media only screen and (max-width: 768px) {
+      padding: 5px 5px 5px 3px;
+    }
+  }
+}
