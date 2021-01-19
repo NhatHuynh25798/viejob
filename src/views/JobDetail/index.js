@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Row, Col } from 'antd'
-import { Link, navigate } from '@reach/router'
 import JobDescription from 'components/JobDescription'
 
 import jobsData from '../../jobs.js'
@@ -15,30 +14,19 @@ const JobDetail = (props) => {
 
   useEffect(() => {
     setData(findJobBySlug())
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slug])
 
   return (
     <Row>
       <Col md={{ offset: 2, span: 20 }}>
-        <Row>
-          <Col xs={24} md={24}>
-            <img
-              style={{
-                width: '100%',
-              }}
-              src='/assets/images/0WuXTFTBHEgkyyQW4WQb.jpg'
-              alt='background'
-            />
-          </Col>
-          <Col md={24}>
-            <Row style={{ justifyContent: 'space-between' }}>
-              <Col md={16}>
-                <JobDescription item={data} />
-              </Col>
-              <Col md={6}>b</Col>
-            </Row>
-          </Col>
-        </Row>
+        <Col md={24}>
+          <Row style={{ justifyContent: 'space-between' }}>
+            <Col md={24}>
+              <JobDescription item={data} />
+            </Col>
+          </Row>
+        </Col>
       </Col>
     </Row>
   )

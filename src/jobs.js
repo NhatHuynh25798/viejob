@@ -78,7 +78,7 @@ export default [
     request: `<p>Si&ecirc;ng năng, kỹ t&iacute;nh v&agrave; y&ecirc;u th&iacute;ch c&ocirc;ng việc</p>
     <p>Ưu ti&ecirc;n đ&atilde; c&oacute; kinh nghiệm gi&uacute;p việc nh&agrave;</p>
     <p>Người ứng tuyển sẽ n&oacute;i chuyện với người đăng tuyển trước khi nhận việc</p>`,
-    image: './assets/images/sinh-vien-don-nha-theo-gio-1024x678.jpeg',
+    image: '/assets/images/sinh-vien-don-nha-theo-gio-1024x678.jpeg',
     slug: 'cong-viec-giup-viec-nha',
   },
   {
@@ -163,11 +163,3 @@ export default [
     slug: 'tuyen-nhan-vien-bao-ve',
   },
 ]
-
-function getName(name, old) {
-  console.log(arguments)
-}
-
-const getNamed = () => {}
-
-// const getName3 = (function () {})(function getName4() {})()

@@ -6,7 +6,9 @@ import 'antd/dist/antd.css'
 import './style.scss'
 
 const HeaderClient = (props) => {
-  const { color } = props
+  const color = ['/', '/cho-nguoi-tim-viec']?.includes(window.location.pathname)
+    ? props?.color
+    : '#000'
   const [active, setActive] = useState(true)
   const [contentButton, setContentButton] = useState('Cho người tìm việc')
 
@@ -20,12 +22,15 @@ const HeaderClient = (props) => {
         >
           <Col className='logo'>
             <Link to='/' className='logo-link'>
-              <span className='logo-title' style={{ margin: 0, color: color }}>
+              <span
+                className='logo-title'
+                style={{ fontSize: '40px !important', margin: 0, color: color }}
+              >
                 VieJobs
               </span>
             </Link>
           </Col>
-          <Col style={{ flex: '1 1 0%', color: 'var(--tertiary)!important' }}>
+          <Col style={{ flex: '1 1 0%' }}>
             <Row justify='end' align='middle'>
               <ul style={{ margin: 0 }} className='menu'>
                 <Link to='/' className='menu__item'>
