@@ -23,7 +23,7 @@ export default [
     <p>- Xử l&yacute; l&ecirc;n/xuống h&agrave;ng ho&aacute;.<br />- Đ&oacute;ng g&oacute;i.<br />- Kiểm đếm h&agrave;ng ho&aacute;.<br />- B&agrave;n giao h&agrave;ng ho&aacute; cho c&aacute;c nh&acirc;n vi&ecirc;n giao h&agrave;ng.<br />- Thưởng th&ecirc;m nếu năng suất l&agrave;m việc su&acirc;t l&agrave;m việc tốt.</p>
     `,
     request: '<p>- C&oacute; sức khoẻ.<br />- Ưu ti&ecirc;n nam.</p>',
-    image: './assets/images/viec-lam-kho.jpeg',
+    image: '/assets/images/viec-lam-kho.jpeg',
     slug: 'ctv-lam-viec-kho-ca-21h-5h',
   },
   {
@@ -50,7 +50,7 @@ export default [
     description: `
     <p>- Ph&acirc;n loại sắp xếp h&agrave;ng h&oacute;a<br />- Phụ chuyển h&agrave;ng l&ecirc;n tải<br />- L&agrave;m theo hướng dẫn của quản l&yacute;</p>`,
     request: '<p>- C&oacute; sức khoẻ.<br />- Ưu ti&ecirc;n nam.</p>',
-    image: './assets/images/phan-loai-hang-hoa.jpeg',
+    image: '/assets/images/phan-loai-hang-hoa.jpeg',
     slug: 'phan-loai-event-thang-12-ca-9h-18h',
   },
   {
@@ -105,7 +105,7 @@ export default [
     description: `
     <p>- Ph&acirc;n loại sắp xếp h&agrave;ng h&oacute;a<br />- Phụ chuyển h&agrave;ng l&ecirc;n tải<br />- L&agrave;m theo hướng dẫn của quản l&yacute;</p>`,
     request: '<p>- C&oacute; sức khoẻ.<br />- Ưu ti&ecirc;n nam.</p>',
-    image: './assets/images/t.jpg',
+    image: '/assets/images/t.jpg',
     slug: 'lam-viec-kho-ca-10h-20h-cu-chi',
   },
   {
@@ -132,7 +132,7 @@ export default [
     description: `
     <p>- Ph&acirc;n loại sắp xếp h&agrave;ng h&oacute;a<br />- Phụ chuyển h&agrave;ng l&ecirc;n tải<br />- L&agrave;m theo hướng dẫn của quản l&yacute;</p>`,
     request: '<p>- C&oacute; sức khoẻ.<br />- Ưu ti&ecirc;n nam.</p>',
-    image: './assets/images/đơn-hàng-đóng-gói-hàng-hóa-đài-bắc-đài-loan.jpeg',
+    image: '/assets/images/đơn-hàng-đóng-gói-hàng-hóa-đài-bắc-đài-loan.jpeg',
     slug: 'phan-loai-hang-event-thang-12',
   },
   {
@@ -159,7 +159,7 @@ export default [
     description: `
     <p>- L&agrave;m theo hướng dẫn của quản l&yacute;</p>`,
     request: '<p>- C&oacute; sức khoẻ.',
-    image: './assets/images/baove.jpeg',
+    image: '/assets/images/baove.jpeg',
     slug: 'tuyen-nhan-vien-bao-ve',
   },
 ]
@@ -170,4 +170,4 @@ function getName(name, old) {
 
 const getNamed = () => {}
 
-const getName3 = (function () {})(function getName4() {})()
+// const getName3 = (function () {})(function getName4() {})()

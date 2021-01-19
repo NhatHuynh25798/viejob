@@ -34,7 +34,10 @@ const JobItem = (data) => {
           <div className='job-card__image--styled'></div>
         )}
         <div className='job-card__description'>
-          <Link to='/' className='job-card__description--name'>
+          <Link
+            to={`/chi-tiet-cong-viec/${data?.slug}`}
+            className='job-card__description--name'
+          >
             {data?.name}
           </Link>
           <Row align='top'>
