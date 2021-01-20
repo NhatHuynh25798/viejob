@@ -105,7 +105,7 @@ export default [
     description: `
     <p>- Ph&acirc;n loại sắp xếp h&agrave;ng h&oacute;a<br />- Phụ chuyển h&agrave;ng l&ecirc;n tải<br />- L&agrave;m theo hướng dẫn của quản l&yacute;</p>`,
     request: '<p>- C&oacute; sức khoẻ.<br />- Ưu ti&ecirc;n nam.</p>',
-    image: '/assets/images/t.jpg',
+    image: '/assets/images/kho.jpeg',
     slug: 'lam-viec-kho-ca-10h-20h-cu-chi',
   },
   {
@@ -161,5 +161,31 @@ export default [
     request: '<p>- C&oacute; sức khoẻ.',
     image: '/assets/images/baove.jpeg',
     slug: 'tuyen-nhan-vien-bao-ve',
+  },
+  {
+    id: 7,
+    name: 'Cần tuyển gia sư dạy kèm cho học sinh tiểu học (Từ lớp 1 đến lớp 5)',
+    userId: 4,
+    userName: 'Nguyễn Thị Thu Ngân',
+    salary: {
+      value: 7000000,
+      unit: 'tháng',
+      note: 'Thù lao sẽ được trả theo tháng',
+    },
+    type: 'Toàn thời gian',
+    category: 'Gia sư',
+    schedule: {
+      startDate: '13/12/2020',
+      endDate: '13/12/2020',
+      startTime: '09:00',
+      endTime: '18:00',
+    },
+    address:
+      '84 đường Linh Trung, khu phố 2, phường Linh Trung, quận Thủ Đức, TP. Hồ Chí Minh',
+    description: `
+    <p>Dạy k&egrave;m cho học sinh từ lớp 1 đến lớp 5.</p>`,
+    request: '<p>Đang l&agrave; sinh vi&ecirc;n trường Đại học</p>',
+    image: '/assets/images/giáu.jpeg',
+    slug: 'tuyen-gia-su-lop-1-5',
   },
 ]
